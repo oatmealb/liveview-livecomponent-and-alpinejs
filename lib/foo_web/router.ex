@@ -18,7 +18,7 @@ defmodule FooWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    live "bar", BarLive
+    live "/bar", BarLive
   end
 
   # Other scopes may use custom stacks.
