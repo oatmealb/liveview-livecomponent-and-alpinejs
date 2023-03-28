@@ -17,7 +17,7 @@ defmodule FooWeb.BarComponent do
 
   def render(assigns) do
     ~H"""
-    <div class="flex-col relative" x-data="{open: false}">
+    <div class="flex-col relative" x-data="{open: false}" id="any">
       <p>Using LiveComponent, the result will NOT immediately show below. Unless you also press Enter key. Subsequent results though do show immediately, as expected.</p>
       <form id="search-form-livecomponent" phx-submit="submit">
         <input
